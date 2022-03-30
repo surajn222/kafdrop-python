@@ -8,6 +8,12 @@ To run:
     python3 app.py  
     Access the app on localhost:5000
 
+Kafka setup on local system:  
+    https://github.com/surajn222/vagrant-boxes/tree/main/Ubuntu-kafdrop
+
+Work still in progress
+    
+
 
 
 

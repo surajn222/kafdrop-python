@@ -25,13 +25,5 @@ def get_messages(name, topic_name):
     list_messages = ["</br>" + x.decode("utf-8") for x in list_messages]
     return str(list_messages)
 
-@app.route('/symbol.html')
-def symbol():
-    return render_template('symbol.html', the_title='Tiger As Symbol')
-
-@app.route('/myth.html')
-def myth():
-    return render_template('myth.html', the_title='Tiger in Myth and Legend')
-
 if __name__ == '__main__':
     app.run(debug=True)
