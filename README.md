@@ -12,7 +12,7 @@ Kafka setup on local system:
     https://github.com/surajn222/vagrant-boxes/tree/main/Ubuntu-kafdrop
 
 Work still in progress
-    
+https://stackoverflow.com/questions/35217603/kafka-python-consumer-not-receiving-messages    
 
 
 
