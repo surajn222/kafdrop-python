@@ -10,6 +10,8 @@ def index():
 @app.route('/<bootstrap_servers>')
 def get_list(bootstrap_servers):
     print(request.path)
+    print(bootstrap_servers)
+    print(bootstrap_servers.split("="))
     bootstrap_servers = bootstrap_servers.split("=")[1]
     print(bootstrap_servers)
     str_topics = get_kafka_topics(bootstrap_servers)

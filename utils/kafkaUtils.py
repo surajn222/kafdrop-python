@@ -7,7 +7,11 @@ import sys
 def get_kafka_topics(bootstrap_servers):
 	consumer = KafkaConsumer(group_id='test-1', bootstrap_servers=bootstrap_servers)
 	kafka_topics = consumer.topics()
-	return str(kafka_topics)
+	if kafka_topics:
+		return str(kafka_topics)
+	else:
+		return str(())
+
 
 def get_messages_from_topic(bootstrap_servers, topic_name):
 	consumer = KafkaConsumer (topic_name, group_id=None,bootstrap_servers=bootstrap_servers,consumer_timeout_ms=1000,auto_offset_reset='earliest',enable_auto_commit=True)
